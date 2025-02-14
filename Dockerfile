@@ -11,7 +11,7 @@ WORKDIR /app
 COPY . .
 
 # Install Python dependencies
-RUN pip install fastapi uvicorn
+RUN pip install -r requirements.txt
 
 # Copy Nginx config
 COPY nginx.conf /etc/nginx/sites-available/default
